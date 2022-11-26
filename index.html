@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greenshop</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body id="body">
+    <dialog id="modal" class="modal flex-direction flex-center">
+      <img
+        id="close"
+        class="modal-close"
+        src="./assets/icons/close.svg"
+        alt=""
+      />
+      <form
+        class="flex-direction"
+        action="https://echo.htmlacademy.ru/"
+        method="post"
+      >
+        <div class="login-title-box flex-center">
+          <p class="login-title">Login</p>
+          <p>Register</p>
+        </div>
+
+        <label class="modal-label" for="email">
+          Enter your username and password to login.
+        </label>
+        <input
+          class="modal-input"
+          id="email"
+          type="email"
+          name="email"
+          placeholder="example@gmail.com"
+        />
+        <input
+          class="modal-input"
+          name="password"
+          type="password"
+          placeholder="enter your password"
+        />
+
+        <a href="#" class="forgot">Forgot your password?</a>
+        <button type="submit" class="login-btn2">Login</button>
+
+        <div class="or-login-with"><p>Or login with</p></div>
+        <button type="submit" class="login-btn google flex-center">
+          <img src="./assets/icons/google-icon.svg" alt="" /> Login with Google
+        </button>
+        <button type="submit" class="login-btn facebook flex-center">
+          <img src="./assets/icons/facebook-icon.svg" alt="" /> Login with
+          Facebook
+        </button>
+      </form>
+    </dialog>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="wrapper flex-between">
+            <a href="#">
+              <img src="./assets/icons/logo.svg" alt="Greenshop logotip" />
+            </a>
+            <div class="nav-list flex">
+              <div><a href="#">Home</a></div>
+              <div><a href="#">Shop</a></div>
+              <div><a href="#">Plant Care</a></div>
+              <div><a href="#">Blogs</a></div>
+            </div>
+            <div class="nav-login flex">
+              <a href="#">
+                <img src="./assets/icons/lupa.svg" alt="Lupa ikonka" />
+              </a>
+              <a href="#">
+                <img src="./assets/icons/korzinka.svg" alt="Lupa ikonka" />
+              </a>
+              <a id="open" class="login-btn flex" href="#">
+                <img src="./assets/icons/login.svg" alt="Login icon" />
+                Login
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

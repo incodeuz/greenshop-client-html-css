@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --bgColor: #fbfbfb;
+  --greenColor: #46a358;
+  --titleColor: #3d3d3d;
+  --preTitleColor: #727272;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-direction {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Header navbar start */
+.wrapper {
+  border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+}
+
+.nav-list {
+  gap: 50px;
+}
+
+.nav-list > div,
+.nav-list > div > a {
+  padding: 25px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--titleColor);
+}
+
+.nav-list > div:hover {
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  color: var(--greenColor);
+  padding-bottom: 20px;
+  border-bottom: 5px solid #46a358;
+}
+
+.nav-login {
+  gap: 30px;
+}
+
+.login-btn {
+  background-color: var(--greenColor);
+  padding: 8px 17px;
+  gap: 5px;
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+/* Header navbar end */
+
+/* Modal start */
+.modal {
+  overflow-x: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  padding: 15px 100px;
+  border: none;
+  border-bottom: 10px solid var(--greenColor);
+}
+
+.modal::backdrop {
+  background-color: rgba(127, 126, 126, 0.5);
+}
+
+.modal-close {
+  width: 27px;
+  float: right;
+  margin-right: -85px;
+  padding: 7px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+}
+
+.modal-close:hover {
+  cursor: pointer;
+  background-color: rgb(242, 237, 237);
+}
+
+.login-title-box {
+  margin-top: 40px;
+  font-style: normal;
+  margin-bottom: 53px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 16px;
+  color: var(--titleColor);
+}
+
+.login-title-box > p:hover {
+  cursor: pointer;
+  color: var(--greenColor);
+}
+
+.login-title {
+  padding-right: 12px;
+  margin-right: 12px;
+  border-right: 3px solid var(--titleColor);
+}
+
+.modal-label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3d3d3d;
+  margin-bottom: 14px;
+}
+
+.modal-input {
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  padding: 12px 14px;
+  margin-bottom: 17px;
+  font-size: 16px;
+}
+
+.modal-input:focus {
+  outline: 2px solid var(--greenColor);
+}
+
+.forgot {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--greenColor);
+  text-decoration: underline;
+  margin-left: auto;
+  margin-bottom: 27px;
+}
+
+.login-btn2 {
+  background: var(--greenColor);
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  padding: 15px 0;
+  border: none;
+  margin-bottom: 46px;
+  gap: 10px;
+}
+
+.or-login-with {
+  border: 1px solid #eaeaea;
+  position: relative;
+  margin-bottom: 27px;
+}
+.or-login-with > p {
+  position: absolute;
+  top: -14px;
+  left: 32%;
+  padding: 2px 5px;
+  background-color: white;
+}
+.google {
+  background-color: white;
+  margin-bottom: 15px;
+  color: #3d3d3d;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+}
+.facebook {
+  color: #3d3d3d;
+  background-color: white;
+  margin: 0;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  margin-bottom: 58px;
+}
+/* Modal end */
