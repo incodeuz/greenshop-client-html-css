@@ -103,7 +103,7 @@ a {
 /* Modal start */
 .modal {
   overflow-x: hidden;
-  position: absolute;
+  position: relative;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -111,6 +111,9 @@ a {
   padding: 15px 100px;
   border: none;
   border-bottom: 10px solid var(--greenColor);
+  border-radius: 6px;
+  height: 100%;
+  max-height: 605px;
 }
 
 .modal::backdrop {
@@ -203,6 +206,7 @@ a {
   position: relative;
   margin-bottom: 27px;
 }
+
 .or-login-with > p {
   position: absolute;
   top: -14px;
@@ -217,6 +221,7 @@ a {
   border: 1px solid #eaeaea;
   border-radius: 5px;
 }
+
 .facebook {
   color: #3d3d3d;
   background-color: white;
@@ -225,4 +230,63 @@ a {
   border-radius: 5px;
   margin-bottom: 58px;
 }
+
+#register-box {
+  position: absolute;
+  top: 106px;
+  z-index: 2;
+  visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+#register-box:target {
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: absolute;
+  top: 106px;
+  z-index: 1;
+  visibility: visible;
+  transform: rotateY(360deg);
+}
+.reg > p {
+  position: absolute;
+  top: -14px;
+  left: 28%;
+  padding: 2px 5px;
+  background-color: white;
+}
+#register-box:target + #login-box {
+  position: absolute;
+  top: 106px;
+  z-index: 2;
+  visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+#login-box {
+  position: absolute;
+  top: 106px;
+  z-index: 1;
+  transform: rotateY(0);
+}
+
+#login-box:target {
+  display: flex;
+  transform: rotateY(360deg);
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.register-modal {
+  color: black;
+  text-decoration: none;
+}
+.register-modal:focus {
+  color: var(--greenColor);
+}
+.login-modal {
+  color: black;
+  text-decoration: none;
+}
+.login-modal:focus {
+  color: var(--greenColor);
+}
+
 /* Modal end */

@@ -21,38 +21,83 @@
         method="post"
       >
         <div class="login-title-box flex-center">
-          <p class="login-title">Login</p>
-          <p>Register</p>
+          <a class="login-modal" href="#login-box"
+            ><p class="login-title">Login</p></a
+          >
+          <a class="register-modal" href="#register-box"><p>Register</p></a>
         </div>
 
-        <label class="modal-label" for="email">
-          Enter your username and password to login.
-        </label>
-        <input
-          class="modal-input"
-          id="email"
-          type="email"
-          name="email"
-          placeholder="example@gmail.com"
-        />
-        <input
-          class="modal-input"
-          name="password"
-          type="password"
-          placeholder="enter your password"
-        />
+        <!-- register -->
+        <div id="register-box" class="flex-direction">
+          <label class="modal-label" for="email">
+            Enter your username and password to login.
+          </label>
+          <input
+            class="modal-input"
+            name="password"
+            type="password"
+            placeholder="enter your name"
+          />
+          <input
+            class="modal-input"
+            id="email"
+            type="email"
+            name="email"
+            placeholder="example@gmail.com"
+          />
+          <input
+            class="modal-input"
+            name="password"
+            type="password"
+            placeholder="enter your password"
+          />
+          <button type="submit" class="login-btn2">Register</button>
 
-        <a href="#" class="forgot">Forgot your password?</a>
-        <button type="submit" class="login-btn2">Login</button>
+          <div class="or-login-with reg"><p>Or register with</p></div>
+          <button type="submit" class="login-btn google flex-center">
+            <img src="./assets/icons/google-icon.svg" alt="" /> Login with
+            Google
+          </button>
+          <button type="submit" class="login-btn facebook flex-center">
+            <img
+              width="20"
+              src="./assets/icons/facebook 1.svg"
+              alt="dsffdsdfs"
+            />
+            Login with Facebook
+          </button>
+        </div>
+        <div id="login-box" class="flex-direction">
+          <label class="modal-label" for="email">
+            Enter your username and password to login.
+          </label>
+          <input
+            class="modal-input"
+            id="email"
+            type="email"
+            name="email"
+            placeholder="example@gmail.com"
+          />
+          <input
+            class="modal-input"
+            name="password"
+            type="password"
+            placeholder="enter your password"
+          />
 
-        <div class="or-login-with"><p>Or login with</p></div>
-        <button type="submit" class="login-btn google flex-center">
-          <img src="./assets/icons/google-icon.svg" alt="" /> Login with Google
-        </button>
-        <button type="submit" class="login-btn facebook flex-center">
-          <img src="./assets/icons/facebook-icon.svg" alt="" /> Login with
-          Facebook
-        </button>
+          <a href="#" class="forgot">Forgot your password?</a>
+          <button type="submit" class="login-btn2">Login</button>
+
+          <div class="or-login-with"><p>Or login with</p></div>
+          <button type="submit" class="login-btn google flex-center">
+            <img src="./assets/icons/google-icon.svg" alt="" /> Login with
+            Google
+          </button>
+          <button type="submit" class="login-btn facebook flex-center">
+            <img src="./assets/icons/facebook 1.svg" alt="" /> Login with
+            Facebook
+          </button>
+        </div>
       </form>
     </dialog>
     <header>
