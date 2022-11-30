@@ -317,6 +317,7 @@ a {
     rgba(245, 245, 245, 0.5) -23.46%,
     rgba(245, 245, 245, 0.5) 107.51%
   );
+  margin-bottom: 46px;
 }
 
 .welcome {
@@ -379,3 +380,87 @@ a {
   cursor: pointer;
 }
 /* hero end */
+
+/* content start */
+
+.main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar {
+  background: #fbfbfb;
+  width: 310px;
+  height: 1254px;
+  padding: 14px 18px;
+}
+
+.content {
+  flex-grow: 1;
+  height: 1254px;
+}
+
+.sidebar-section-title {
+  margin-bottom: 10px;
+}
+
+.sidebar-items > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+  padding: 0 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 40px;
+  color: var(--titleColor);
+}
+
+.sidebar-items > a:hover {
+  color: var(--greenColor);
+}
+
+.price-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: #3d3d3d;
+}
+
+.price-title > span {
+  color: var(--greenColor);
+}
+
+.price-box {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-range {
+  accent-color: var(--greenColor);
+  width: 100%;
+}
+
+.main-btn {
+  width: fit-content;
+}
+
+.third {
+  margin-top: 46px;
+}
+
+.second {
+  margin-top: 36px;
+}
+.reklama {
+  width: 100%;
+}
+.reklama > img {
+  width: 100%;
+}
+/* content end */
