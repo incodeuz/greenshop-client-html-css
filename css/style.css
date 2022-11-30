@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -462,5 +463,36 @@ a {
 }
 .reklama > img {
   width: 100%;
+}
+
+.content-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-nav-first {
+  display: flex;
+  gap: 20px;
+}
+
+#new-arrivals {
+  display: none;
+}
+#sale {
+  display: none;
+}
+
+#new-arrivals:target {
+  display: flex;
+}
+#new-arrivals:target ~ #all-plants {
+  display: none;
+}
+#sale:target {
+  display: flex;
+}
+#sale:target ~ #all-plants {
+  display: none;
 }
 /* content end */
