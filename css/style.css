@@ -265,6 +265,7 @@ a {
   visibility: visible;
   transform: rotateY(360deg);
 }
+
 .reg > p {
   position: absolute;
   top: -14px;
@@ -272,6 +273,7 @@ a {
   padding: 2px 5px;
   background-color: white;
 }
+
 #register-box:target + #login-box {
   position: absolute;
   top: 106px;

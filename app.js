@@ -5,13 +5,13 @@ const open = document.getElementById("open");
 
 modal.style.display = "none";
 open.addEventListener("click", () => {
-  modal.showModal();
-  modal.style.display = "block";
   body.style.overflowY = "hidden";
+  modal.style.display = "block";
+  modal.showModal();
 });
 
 closeBtn.addEventListener("click", () => {
   modal.style.display = "none";
-  modal.close();
   body.style.overflowY = "scroll";
+  modal.close();
 });
