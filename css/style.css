@@ -615,7 +615,7 @@ a {
   border-radius: 4px;
   color: #3d3d3d;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 18px;
   line-height: 16px;
   /* identical to box height, or 89% */
@@ -664,7 +664,7 @@ a {
   flex: 1;
   background-color: #fbfbfb;
   height: 100%;
-  background-image: url("../assets/images/back.png");
+  background-image: url("../assets/images/hero-gul.png");
   background-repeat: no-repeat;
   background-position: calc(50% - 350px) calc(50% + 135px);
 }
@@ -676,11 +676,10 @@ a {
   justify-content: space-between;
   flex-direction: column;
   padding: 37px 35px 46px 35px;
-
   flex: 1;
   background-color: #fbfbfb;
   height: 100%;
-  background-image: url("../assets/images/back.png");
+  background-image: url("../assets/images/hero-gul.png");
   background-repeat: no-repeat;
   background-position: calc(50% - 350px) calc(50% + 135px);
 }
@@ -709,7 +708,6 @@ a {
 }
 .about-section-desc {
   width: 292px;
-
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -717,6 +715,7 @@ a {
   text-align: right;
   color: #727272;
 }
+
 .about-section-btn {
   display: flex;
   align-items: center;
@@ -732,10 +731,12 @@ a {
   border: 1px solid #46a358;
   color: #ffffff;
 }
+
 .about-section-btn > img {
   width: 15px;
   height: 15px;
 }
+
 .about-section-btn:hover {
   background-color: #fff;
   color: #46a358;
