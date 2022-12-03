@@ -388,19 +388,20 @@ a {
 
 .main-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  height: fit-content;
 }
 .sidebar {
-  background: #fbfbfb;
   width: 310px;
-  height: 1254px;
+  background: #fbfbfb;
+  height: fit-content;
   padding: 14px 18px;
 }
 
 .content {
-  flex-grow: 1;
-  height: 1254px;
+  width: 1000px;
+  height: fit-content;
 }
 
 .sidebar-section-title {
@@ -471,6 +472,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 31px;
 }
 
 .content-nav-first {
@@ -497,4 +499,103 @@ a {
 #sale:target ~ #all-plants {
   display: none;
 }
+
+.content-nav-first > a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: #3d3d3d;
+  padding: 7px;
+}
+
+.content-nav-first > a:hover {
+  border-bottom: 2px solid var(--greenColor);
+  padding-bottom: 5px;
+  color: var(--greenColor);
+}
+.sort-by-select {
+  border: none;
+  outline: none;
+}
+
+.sort-by-select > option {
+  font-size: 15px;
+}
+
+.content {
+  padding-left: 50px;
+}
+
+.plants-cart {
+  width: 258px;
+}
+.cart-img {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  background: #fbfbfb;
+  margin-bottom: 12px;
+  border-top: 3px solid transparent;
+  overflow: hidden;
+}
+
+.cart-img:hover {
+  border-top: 3px solid var(--greenColor);
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.cart-img:hover > .hover-items {
+  transform: translateY(0);
+}
+
+.hover-items {
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  gap: 10px;
+  position: absolute;
+  bottom: 10px;
+  transform: translateY(45px);
+}
+
+.hover-items > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 7px;
+  background-color: white;
+  border-radius: 6px;
+}
+.hover-items > div:hover {
+  cursor: pointer;
+}
+.hover-items > div:hover > svg > path {
+  fill: var(--greenColor);
+}
+
+.cart-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3d3d3d;
+  margin-bottom: 6px;
+}
+
+.cart-price {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  color: #46a358;
+}
+
+.all-plants-box,
+.sale-box,
+.new-arrivals-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
 /* content end */
